@@ -11,7 +11,7 @@ const memories = [
         collected: false,
 
         text:
-        "Aquí comenzó una de mis etapas favoritas ❤️"
+        "Hola princesita, este es el comienzo de nuestra aventura, tenemos muchas cosas por vivir juntos, muchos lugares por visitar y mas momentos por compartir❤️ Sigue buscando, hay muchos recuerdos guardados en este mundo esperando a ser descubiertos ❤️"
     },
 
     {
@@ -25,7 +25,7 @@ const memories = [
         collected: false,
 
         text:
-        "Hay recuerdos que siempre me hacen sonreír ❤️"
+        "Eres mi compañera en todas nuestras travesuras. Quien comparte conmigo uno y mil besos, desde tiernos hasta mañosos pero que contigo siempre querre uno mas muak  ❤️"
     },
 
     {
@@ -39,7 +39,7 @@ const memories = [
         collected: false,
 
         text:
-        "Cada momento contigo tiene algo especial ❤️"
+        "Soy tuyo y tu eres mia, mi niña, mi princesita, mi amor, mi Esthercita te amo mucho... continuaa buscando preciosa ❤️"
     },
 
     {
@@ -53,7 +53,7 @@ const memories = [
         collected: false,
 
         text:
-        "Antes de continuar tendrás que resolver este pequeño desafío ❤️"
+        "Un pequeño desafio para ti, lograste resolverlo?❤️"
     },
 
     {
@@ -67,13 +67,13 @@ const memories = [
         collected: false,
 
         text:
-        "Uno de mis recuerdos favoritos quedó guardado aquí ❤️"
+        "Un par de momentos felieces y recuerdos  ❤️"
     },
 
     {
         id: 6,
 
-        type: "photo",
+        type: "video",
 
         x: 5000,
         y: 1200,
@@ -81,7 +81,7 @@ const memories = [
         collected: false,
 
         text:
-        "Ya casi llegas al final de esta aventura ❤️"
+        "Jsjsjsj amor poder compartir mi vida contigo, cuando nos casemos y recordemos todas las locuras que hemos vivido reiremos mucho hasta terminar besandote y decirte que te amo❤️"
     },
 
     {

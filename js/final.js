@@ -81,13 +81,13 @@ ctx.fillText(
     "28px Arial";
 
     ctx.fillText(
-        "Gracias por vivir esta aventura conmigo",
+        "Gracias por compartir 37 mese conmigo, por toda la felicidad que he podido vivir a tu lado y por ser la persona maravillosa que eres ❤️ Espero que te gustara esta pequeña aventura, no es la gran cosa pero lo hice con cariño para ti, espero que te haya sacado una sonrisa y que te haya hecho recordar algunos de los momentos que hemos vivido juntos ❤️ Te amo muchísimo ❤️ ",
         canvas.width/2-250,
         240
     );
 
     ctx.fillText(
-        "Te amo muchísimo ❤️",
+        "Feliz cumpleaños mi princesita❤️ ",
         canvas.width/2-140,
         300
     );

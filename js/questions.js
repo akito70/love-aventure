@@ -7,10 +7,10 @@ const questions = [
     completed:false,
 
     question:
-    "¿Recuerdas dónde comenzó nuestra historia?",
+    "¿Sabes cuantos meses cumplimos el dia de hoy? ❤️",
 
     success:
-    "❤️ Así empezó todo."
+    "❤️ Pues hoy mi mi niña cumplimos 37 mese juntos en los cuales agradezco haberte tenido a mi lado"
 },
 
 {
@@ -20,10 +20,10 @@ const questions = [
     completed:false,
 
     question:
-    "¿Cuál fue nuestra primera salida?",
+    "¿dime algo por lo que sientas que te regaño mucho?",
 
     success:
-    "🌸 Un recuerdo que siempre guardaré."
+    "🌸 si pensaste en tomar cocacola te doy una de 3 litros. Jumm mañosa ni te creas"
 },
 
 {
@@ -33,10 +33,10 @@ const questions = [
     completed:false,
 
     question:
-    "¿Cuál es una de nuestras canciones?",
+    "¿Que crees que es lo que más me gusta de ti?",
 
     success:
-    "🎵 Exactamente."
+    "🌹 Eres tan hermosa, dulce,preciosa, perfecta, divertida, mañosotaa, buenota, amable, empatica, cariñosa, bella, inteligente, neciaa, un poquito loquita, tienes tantas cualidades pero lo que mas me gusta es que seas tú, amo todo de ti tal y como eres. Y si pensaste mañosadas tambien tienes razon porque si estas buenota  "
 },
 
 {

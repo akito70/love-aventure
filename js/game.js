@@ -579,7 +579,7 @@ function drawInteractionHint() {
             "24px Arial";
 
         ctx.fillText(
-            "Presiona E o ❤️",
+            "Toca el corazon para ver este recuerdo ❤️",
             canvas.width / 2 - 100,
             60
         );
@@ -597,7 +597,7 @@ function drawInteractionHint() {
         "24px Arial";
 
     ctx.fillText(
-        "Presiona E para leer el cartel",
+        "Toca para responder la pregunta 💬",
         canvas.width / 2 - 160,
         100
     );
@@ -660,7 +660,7 @@ function drawVictoryMessage() {
             "32px Arial";
 
         ctx.fillText(
-            "¡Todos los recuerdos encontrados!",
+            "¡Encontraste todos los recuerdos!",
             canvas.width / 2 - 220,
             130
         );
