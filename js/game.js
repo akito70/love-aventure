@@ -48,6 +48,31 @@ window.addEventListener(
 
     }
 );
+const startScreen =
+document.getElementById(
+    "startScreen"
+);
+
+const startGameButton =
+document.getElementById(
+    "startGame"
+);
+
+if (
+    startGameButton
+) {
+
+    startGameButton.addEventListener(
+        "click",
+        () => {
+
+            startScreen.style.display =
+                "none";
+
+            startMusic();
+        }
+    );
+}
 const canvas = document.getElementById("gameCanvas"); 
 const ctx = canvas.getContext("2d");
 const memoryModal =
