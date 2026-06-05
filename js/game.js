@@ -107,8 +107,6 @@ const closeMemory =
     3:
     "assets/photos/memory3.jpg",
 
-    6:
-    "assets/photos/memory6.jpg",
 
     7:
     "assets/photos/final.jpg"
@@ -121,6 +119,9 @@ const videoMemories = {
 
     5:
     "assets/videos/memory5.mp4"
+
+    6:
+    "assets/videos/memory6.mp4"
 };
 
 function openPhoto(memory) {
