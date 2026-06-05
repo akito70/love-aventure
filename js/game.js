@@ -3,18 +3,48 @@ document.getElementById(
     "bgMusic"
 );
 
+let musicStarted = false;
+
 function startMusic() {
 
-    bgMusic.volume = 0.4;
+    if (
+        musicStarted ||
+        !bgMusic
+    ) {
+        return;
+    }
 
-    bgMusic.play()
-        .catch(err =>
-            console.log(err)
-        );
+    musicStarted = true;
+
+    bgMusic.load();
+
+    bgMusic.volume = 0.5;
+
+    const playPromise =
+        bgMusic.play();
+
+    if (playPromise) {
+
+        playPromise.catch(err => {
+
+            console.log(
+                "Error al reproducir música:",
+                err
+            );
+
+            musicStarted = false;
+        });
+    }
 }
 
 document.addEventListener(
     "touchstart",
+    startMusic,
+    { once:true }
+);
+
+document.addEventListener(
+    "touchend",
     startMusic,
     { once:true }
 );
