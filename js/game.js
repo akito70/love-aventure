@@ -118,8 +118,8 @@ const videoMemories = {
     "assets/videos/memory2.mp4",
 
     5:
-    "assets/videos/memory5.mp4"
-
+    "assets/videos/memory5.mp4",
+    
     6:
     "assets/videos/memory6.mp4"
 };
