@@ -17,6 +17,14 @@ window.addEventListener(
     (e) => {
 
         keys[e.key] = true;
+
+        if (
+            typeof startMusic ===
+            "function"
+        ) {
+
+            startMusic();
+        }
     }
 );
 
@@ -54,6 +62,14 @@ Object.keys(mobileButtons).forEach(id => {
             activateKey(
                 mobileButtons[id]
             );
+
+            if (
+                typeof startMusic ===
+                "function"
+            ) {
+
+                startMusic();
+            }
         }
     );
 
@@ -96,6 +112,14 @@ if (interactBtn) {
             e.preventDefault();
 
             interactPressed = true;
+
+            if (
+                typeof startMusic ===
+                "function"
+            ) {
+
+                startMusic();
+            }
         }
     );
 
@@ -106,6 +130,14 @@ if (interactBtn) {
             e.preventDefault();
 
             interactPressed = true;
+
+            if (
+                typeof startMusic ===
+                "function"
+            ) {
+
+                startMusic();
+            }
         }
     );
 }

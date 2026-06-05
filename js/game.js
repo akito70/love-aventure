@@ -16,49 +16,37 @@ function startMusic() {
 
     musicStarted = true;
 
-    bgMusic.load();
-
     bgMusic.volume = 0.5;
 
-    const playPromise =
-        bgMusic.play();
+    bgMusic.play()
+    .catch(err => {
 
-    if (playPromise) {
+        console.log(
+            "Error música:",
+            err
+        );
 
-        playPromise.catch(err => {
-
-            console.log(
-                "Error al reproducir música:",
-                err
-            );
-
-            musicStarted = false;
-        });
-    }
+        musicStarted = false;
+    });
 }
 
-document.addEventListener(
-    "touchstart",
-    startMusic,
-    { once:true }
-);
+window.addEventListener(
+    "load",
+    () => {
 
-document.addEventListener(
-    "touchend",
-    startMusic,
-    { once:true }
-);
+        document.body.addEventListener(
+            "touchstart",
+            startMusic,
+            { once:true }
+        );
 
-document.addEventListener(
-    "click",
-    startMusic,
-    { once:true }
-);
+        document.body.addEventListener(
+            "click",
+            startMusic,
+            { once:true }
+        );
 
-document.addEventListener(
-    "keydown",
-    startMusic,
-    { once:true }
+    }
 );
 const canvas = document.getElementById("gameCanvas"); 
 const ctx = canvas.getContext("2d");
