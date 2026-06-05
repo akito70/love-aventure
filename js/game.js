@@ -1,17 +1,34 @@
 const bgMusic =
 document.getElementById(
     "bgMusic"
-);window.addEventListener(
+);
+
+function startMusic() {
+
+    bgMusic.volume = 0.4;
+
+    bgMusic.play()
+        .catch(err =>
+            console.log(err)
+        );
+}
+
+document.addEventListener(
+    "touchstart",
+    startMusic,
+    { once:true }
+);
+
+document.addEventListener(
+    "click",
+    startMusic,
+    { once:true }
+);
+
+document.addEventListener(
     "keydown",
-    () => {
-
-        bgMusic.volume = 0.4;
-
-        bgMusic.play();
-    },
-    {
-        once:true
-    }
+    startMusic,
+    { once:true }
 );
 const canvas = document.getElementById("gameCanvas"); 
 const ctx = canvas.getContext("2d");
