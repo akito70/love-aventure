@@ -677,7 +677,81 @@ function drawVictoryMessage() {
         );
     }
 }
+function drawNearestMemoryArrow() {
 
+    const remaining =
+        memories.filter(
+            m => !m.collected
+        );
+
+    if (
+        remaining.length === 0
+    ) {
+        return;
+    }
+
+    let nearest =
+        remaining[0];
+
+    let nearestDistance =
+        Infinity;
+
+    remaining.forEach(memory => {
+
+        const dx =
+            memory.x - player.x;
+
+        const dy =
+            memory.y - player.y;
+
+        const distance =
+            Math.sqrt(
+                dx * dx +
+                dy * dy
+            );
+
+        if (
+            distance <
+            nearestDistance
+        ) {
+
+            nearestDistance =
+                distance;
+
+            nearest =
+                memory;
+        }
+    });
+
+    const angle =
+        Math.atan2(
+            nearest.y - player.y,
+            nearest.x - player.x
+        );
+
+    ctx.save();
+
+    ctx.translate(
+        canvas.width - 80,
+        80
+    );
+
+    ctx.rotate(angle);
+
+    ctx.fillStyle =
+        "#ffd700";
+
+    ctx.font =
+        "50px Arial";
+
+    ctx.fillText(
+        "➜",
+        -15,
+        15
+    );
+
+    ctx.restore();
+}
 function draw() {
 
     ctx.clearRect(
@@ -721,7 +795,7 @@ function draw() {
 }
 
     drawUI(ctx);
-
+drawNearestMemoryArrow();
     if (puzzle.active) {
 
         drawPuzzle(

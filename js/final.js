@@ -80,11 +80,71 @@ ctx.fillText(
     ctx.font =
     "28px Arial";
 
-    ctx.fillText(
-        "Gracias por compartir 37 mese conmigo, por toda la felicidad que he podido vivir a tu lado y por ser la persona maravillosa que eres ❤️ Espero que te gustara esta pequeña aventura, no es la gran cosa pero lo hice con cariño para ti, espero que te haya sacado una sonrisa y que te haya hecho recordar algunos de los momentos que hemos vivido juntos ❤️ Te amo muchísimo ❤️ ",
-        canvas.width/2-250,
-        240
-    );
+   ctx.fillText(
+    "Gracias por compartir 37 meses conmigo,",
+    canvas.width/2-250,
+    240
+);
+
+ctx.fillText(
+    "por toda la felicidad que he podido vivir",
+    canvas.width/2-250,
+    280
+);
+
+ctx.fillText(
+    "a tu lado y por ser la persona",
+    canvas.width/2-250,
+    320
+);
+
+ctx.fillText(
+    "maravillosa que eres ❤️",
+    canvas.width/2-250,
+    360
+);
+
+ctx.fillText(
+    "Espero que te gustara esta pequeña aventura,",
+    canvas.width/2-250,
+    420
+);
+
+ctx.fillText(
+    "no es la gran cosa pero la hice",
+    canvas.width/2-250,
+    460
+);
+
+ctx.fillText(
+    "con muchísimo cariño para ti ❤️",
+    canvas.width/2-250,
+    500
+);
+
+ctx.fillText(
+    "Espero que te haya sacado una sonrisa",
+    canvas.width/2-250,
+    560
+);
+
+ctx.fillText(
+    "y que te haya hecho recordar algunos",
+    canvas.width/2-250,
+    600
+);
+
+ctx.fillText(
+    "de los momentos que hemos vivido juntos ❤️",
+    canvas.width/2-250,
+    640
+);
+
+ctx.fillText(
+    "Te amo muchísimo ❤️",
+    canvas.width/2-250,
+    720
+);
 
     ctx.fillText(
         "Feliz cumpleaños mi princesita❤️ ",
