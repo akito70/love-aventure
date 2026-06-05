@@ -62,15 +62,25 @@ if (
     startGameButton
 ) {
 
-    startGameButton.addEventListener(
-        "click",
-        () => {
+    function startAdventure() {
+
+        if (startScreen) {
 
             startScreen.style.display =
                 "none";
-
-            startMusic();
         }
+
+        startMusic();
+    }
+
+    startGameButton.addEventListener(
+        "click",
+        startAdventure
+    );
+
+    startGameButton.addEventListener(
+        "touchstart",
+        startAdventure
     );
 }
 const canvas = document.getElementById("gameCanvas"); 
