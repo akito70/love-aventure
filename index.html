@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Love History</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+```
+
+</head>
+
+<body>
+
+```
+<canvas id="gameCanvas"></canvas>
+
+<div id="mobileControls">
+
+    <button id="up">
+        ▲
+    </button>
+
+    <div class="middle-row">
+
+        <button id="left">
+            ◀
+        </button>
+
+        <button id="interactBtn">
+            ❤️
+        </button>
+
+        <button id="right">
+            ▶
+        </button>
+
+    </div>
+
+    <button id="down">
+        ▼
+    </button>
+
+</div>
+
+<!-- VISOR DE RECUERDOS -->
+
+<div id="memoryModal">
+
+    <div id="memoryContent">
+
+        <img
+            id="memoryImage"
+            src=""
+            alt=""
+        >
+
+        <video
+            id="memoryVideo"
+            controls
+        >
+        </video>
+
+        <div id="memoryText">
+        </div>
+
+        <button id="closeMemory">
+            Continuar ❤️
+        </button>
+
+    </div>
+<audio
+    id="bgMusic"
+    loop
+>
+    <source
+        src="assets/music/background.mp3"
+        type="audio/mpeg"
+    >
+</audio>
+</div>
+
+<script src="js/controls.js"></script>
+
+<script src="js/collision.js"></script>
+
+<script src="js/world.js"></script>
+
+<script src="js/player.js"></script>
+
+<script src="js/memories.js"></script>
+
+<script src="js/ui.js"></script>
+
+<script src="js/puzzle.js"></script>
+<script src="js/final.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/game.js"></script>
+
+
+</body>
+
+</html>
+
